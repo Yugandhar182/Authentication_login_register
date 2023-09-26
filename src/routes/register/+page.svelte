@@ -44,10 +44,10 @@ const usersRef = ref(db, 'users'); // Reference to a "users" node in the databas
 
       // Create a new user object with the registration data
       const newUser = {
-  email: registeredEmail,
-  password: registeredPassword,
-  firstName,
-  lastName,
+      email: registeredEmail,
+      password: registeredPassword,
+      firstName,
+      lastName,
 };
 
 
@@ -141,10 +141,12 @@ console.log("Last Name:", lastName);
 .container {
  padding: 16px;
  width: 500px;
- height: 500px;
+ height: 550px;
  background-color: rgb(238, 240, 234);
  margin-left:500px;
  margin-top: 35px;
+ padding: 25px; 
+      
 
 }
 .h1{
