@@ -56,7 +56,7 @@
   </script>
 
 
-  <h1 style="color: blue;" class="h1">Login form</h1>
+<center> <h1 style="color: blue; font-weight:bold; font-size:30px ; margin-top:20px"  >  Login Form </h1> </center> 
   <form on:submit={handleSubmit} class="container">
 	<div class="imgcontainer">
 	  <img src="https://recruitlycdn.com/assets/v3/login400x.png" alt="Avatar" class="avatar">
@@ -133,6 +133,8 @@
 	  background-color: rgb(238, 240, 234);
 	  margin-left: 500px;
 	  margin-top: 30px;
+	  padding: 25px; 
+      background-color: rgb(220, 238, 244);
 	}
   
 	button {
