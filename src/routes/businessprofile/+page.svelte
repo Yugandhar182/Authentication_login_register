@@ -526,13 +526,13 @@ function Homepage() {
   .form-container {
     width: 800px;
     max-height: 1500px; 
-	height: 600PX;
+	height: 650PX;
     overflow-y: auto; 
     margin-left: 200px;
     padding: 30px; /* Add padding for spacing */
     border: 5px solid  whitesmoke; /* Add a border for styling */
     border-radius: 10px; /* Add border radius for rounded corners */
-    margin-top: 50px;
+    margin-top: 0px;
 
 	
   }
