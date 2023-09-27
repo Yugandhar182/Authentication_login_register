@@ -5,12 +5,14 @@
   import { goto } from '$app/navigation';
 
   let isAuthenticated = false; // Initialize a loading state
+  let user = null; // Initialize the user variable
 
   // Check if the user is authenticated when the component mounts
   onMount(async () => {
     // Check if the user is authenticated
     if (auth.currentUser) {
       isAuthenticated = true; // User is authenticated
+      user = auth.currentUser.email;
     } else {
       // If the user is not authenticated, redirect them to the login page
       goto('/'); 
@@ -21,23 +23,16 @@
 <Button/>
 <main>
  
-    <!-- Protected content that should only be shown when authenticated -->
-    <h1 class="h1" style="color:red;">Welcome to Hire optica</h1>
-    <div class="container">
- 
-    </div>
- 
- 
-  
-
- 
-</main>
+   
+    <h1 class="h1" >Welcome , {user}</h1>
+  </main>
 {/if}
 <style>
   .h1{
     position: absolute;
     top: 200px;
     left: 600px;
-    font-size: 80px;
+    font-size: 50px;
   }
+
 </style>
