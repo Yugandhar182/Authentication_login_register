@@ -22,7 +22,7 @@
     if (userData) {
       const user = JSON.parse(userData);
       auth.currentUser = user;
-      goto('/Homepage'); // Navigate to the homepage if a user is already logged in
+      goto('/candidatelist'); // Navigate to the homepage if a user is already logged in
     }
     // No user data found, do nothing (login page will be shown)
   });
