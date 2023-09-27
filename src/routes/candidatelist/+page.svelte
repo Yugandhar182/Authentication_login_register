@@ -224,7 +224,7 @@ onMount(async () => {
 
 {#if isAuthenticated}
 <Button/>
-<h2 class="h2" >Candidate list</h2>
+
 <main >
 
  <div class="flex-container">
@@ -246,7 +246,7 @@ onMount(async () => {
  width: 85%; /* Use 100% width to adapt to the parent container */
  overflow-x: auto; /* Add horizontal scroll if necessary */
  margin-left:220px;
- margin-top: -5px;
+ margin-top: 25px;
  height: 610px;
 
  
@@ -255,13 +255,5 @@ onMount(async () => {
 
 
 
-.h2 {
-   margin-left: 700px;
-   margin-top: 10px;
-   font-weight: bold;
-   font-size: 19px;
-  color: crimson;
- 
- }
 
 </style>

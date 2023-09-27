@@ -28,20 +28,15 @@ function joblist() {
 
 
 async function handleLogout() {
-try {
-  const confirmation = confirm("Are you sure you want to log out?");
-  
-  // Check if the user confirmed (clicked "OK")
-  if (confirmation) {
+  try {
     // Remove user data from localStorage
     localStorage.removeItem('user');
 
     // Redirect to the login page
     goto('/');
+  } catch (error) {
+    console.error("Error logging out:", error.message);
   }
-} catch (error) {
-  console.error("Error logging out:", error.message);
-}
 }
 
 
