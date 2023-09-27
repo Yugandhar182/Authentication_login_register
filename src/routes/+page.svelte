@@ -39,7 +39,7 @@
 		errorMessage = "";
   
 		// Navigate to the /Homepage route after successful login
-		goto('/Homepage');
+		goto('/candidatelist');
 	  } catch (error) {
 		// Display error message if login fails
 		errorMessage = "Invalid username or password.";
@@ -56,7 +56,7 @@
   </script>
 
 
-<center> <h1 style="color: blue; font-weight:bold; font-size:30px ; margin-top:20px"  >  Login Form </h1> </center> 
+
   <form on:submit={handleSubmit} class="container">
 	<div class="imgcontainer">
 	  <img src="https://recruitlycdn.com/assets/v3/login400x.png" alt="Avatar" class="avatar">

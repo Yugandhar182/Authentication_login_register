@@ -406,7 +406,7 @@ function Homepage() {
   <form class="form-container">
 	<div class="grid gap-6 mb-6 md:grid-cols-1">
 	  <div>
-		<Label for="company_profile" class="mb-1">Company Profile</Label>
+		<Label for="company_profile" class="mb-1" style="font-weight:bold; font-size:20px">Company Profile</Label>
 	    <hr>
 	  </div>
 	</div>
@@ -432,7 +432,7 @@ function Homepage() {
 	
 		<div class="mb-6">
 		<label for="phone" class="mb-2" >Phone</label>
-		<input type="tel" id="phone-input" on:input={handleInput}  class="form-select  block w-full py-2.5 pl-3 pr-10 text-base border border-gray-300 rounded-lg bg-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:text-white dark:focus:ring-gray-700 dark:focus:border-gray-600" style="width:540px;" />
+		<input type="tel" id="phone-input" on:input={handleInput}  class="form-select  block w-full py-2.5 pl-3 pr-10 text-base border border-gray-300 rounded-lg bg-transparent focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm dark:text-white dark:focus:ring-gray-700 dark:focus:border-gray-600" style="width:710px;" />
 	
 	  </div>
 	</div>
@@ -519,29 +519,28 @@ function Homepage() {
 </main>
 
 {/if}
-<i class="fa fa-home" style="font-size:35px;color:white; position: absolute; top: 10px; left: 10px;" on:click={Homepage}></i>
+
 
   
   <style>
   .form-container {
-    width: 600px;
+    width: 800px;
     max-height: 1500px; 
 	height: 600PX;
     overflow-y: auto; 
-    margin: 0 auto; 
-    padding: 20px; /* Add padding for spacing */
-    border: 1px solid #eb0d6d; /* Add a border for styling */
+    margin-left: 200px;
+    padding: 30px; /* Add padding for spacing */
+    border: 5px solid  whitesmoke; /* Add a border for styling */
     border-radius: 10px; /* Add border radius for rounded corners */
-   margin-top: 10px;
+    margin-top: 50px;
+
 	
   }
   .container {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-  
-
-  }
+    justify-content: center;
+    align-items: center; 
+ }
 
 
 	.mb-6 {
